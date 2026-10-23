@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Contactos",
   description:
-    "Contacte a Castelo Branco Auto por telefone, email ou formulário. Morada e horário em Castelo Branco, para viaturas e oficina.",
+    "Contacte a Auto Castelo Branco por telefone, email ou formulário. Morada e horário em Castelo Branco, para viaturas e oficina.",
   path: "/contactos",
 });
 

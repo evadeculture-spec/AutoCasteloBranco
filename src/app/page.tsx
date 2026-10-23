@@ -12,9 +12,9 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   // O modelo de título do layout não se aplica à página raiz: título absoluto com a marca.
-  title: { absolute: "Castelo Branco Auto — Viaturas usadas e oficina em Castelo Branco" },
+  title: { absolute: "Auto Castelo Branco — Viaturas usadas e oficina em Castelo Branco" },
   description:
-    "Castelo Branco Auto: viaturas usadas apresentadas com rigor e oficina para manutenção, revisão e diagnóstico em Castelo Branco. Peça informação ou marcação.",
+    "Auto Castelo Branco: viaturas usadas apresentadas com rigor e oficina para manutenção, revisão e diagnóstico em Castelo Branco. Peça informação ou marcação.",
   path: "/",
 });
 
@@ -228,7 +228,7 @@ export default function HomePage() {
           ))}
         </div>
         <Link href="/sobre-nos" className="link-line mt-14 inline-flex items-center gap-2 font-semibold">
-          Sobre a Castelo Branco Auto <ArrowRight size={18} />
+          Sobre a Auto Castelo Branco <ArrowRight size={18} />
         </Link>
       </section>
 

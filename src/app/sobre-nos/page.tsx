@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Sobre nós",
   description:
-    "A Castelo Branco Auto: comércio de viaturas usadas e oficina em Castelo Branco, com transparência na relação comercial e rigor na apresentação de cada viatura.",
+    "A Auto Castelo Branco: comércio de viaturas usadas e oficina em Castelo Branco, com transparência na relação comercial e rigor na apresentação de cada viatura.",
   path: "/sobre-nos",
 });
 

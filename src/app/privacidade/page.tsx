@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Política de privacidade",
-  description: "Como a Castelo Branco Auto trata os dados pessoais enviados através deste website.",
+  description: "Como a Auto Castelo Branco trata os dados pessoais enviados através deste website.",
   path: "/privacidade",
 });
 

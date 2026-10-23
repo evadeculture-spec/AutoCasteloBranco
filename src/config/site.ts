@@ -18,8 +18,8 @@ const locality = env(process.env.NEXT_PUBLIC_ADDRESS_LOCALITY) ?? "Castelo Branc
 const hours = env(process.env.NEXT_PUBLIC_OPENING_HOURS);
 
 export const site = {
-  name: "Castelo Branco Auto",
-  shortName: "CB Auto",
+  name: "Auto Castelo Branco",
+  shortName: "Auto CB",
   url: (env(process.env.NEXT_PUBLIC_SITE_URL) ?? "http://localhost:3000").replace(/\/$/, ""),
   locale: "pt_PT",
   /** Enquanto `true`, o site identifica o conteúdo como demonstrativo e não é indexado. */

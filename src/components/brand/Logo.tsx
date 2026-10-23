@@ -23,12 +23,12 @@ export function Logo({ className, compact = false }: { className?: string; compa
     <span className={cn("inline-flex items-center gap-3", className)}>
       <Mark className="size-7 shrink-0" />
       <span className="flex flex-col leading-none">
+        {!compact && (
+          <span className="label mb-[5px] text-[0.6rem] tracking-[0.42em] opacity-70">Auto</span>
+        )}{" "}
         <span className="font-display-wide text-[0.98rem] font-extrabold tracking-[-0.01em] uppercase">
           Castelo Branco
-        </span>{" "}
-        {!compact && (
-          <span className="label mt-[5px] text-[0.6rem] tracking-[0.42em] opacity-70">Auto</span>
-        )}
+        </span>
       </span>
     </span>
   );

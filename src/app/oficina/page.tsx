@@ -13,7 +13,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Oficina automóvel em Castelo Branco",
   description:
-    "Oficina da Castelo Branco Auto: manutenção preventiva, revisão, diagnóstico, travagem e pneus. Peça a sua marcação online ou por telefone.",
+    "Oficina da Auto Castelo Branco: manutenção preventiva, revisão, diagnóstico, travagem e pneus. Peça a sua marcação online ou por telefone.",
   path: "/oficina",
 });
 

@@ -4,7 +4,7 @@ import { cn } from "@/lib/cn";
 /**
  * Alçado técnico de uma viatura (perfil lateral), desenhado a traço.
  * Não representa nenhum modelo concreto nem reproduz marcas: é a linguagem
- * gráfica da Castelo Branco Auto enquanto não existem fotografias reais.
+ * gráfica da Auto Castelo Branco enquanto não existem fotografias reais.
  */
 
 interface Geometry {

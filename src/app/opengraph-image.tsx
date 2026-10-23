@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Castelo Branco Auto — Viaturas usadas e oficina em Castelo Branco";
+export const alt = "Auto Castelo Branco — Viaturas usadas e oficina em Castelo Branco";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -27,8 +27,8 @@ export default function OpengraphImage() {
             <path d="M10 25v-7.5h8V25" fill="#a51e22" />
           </svg>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ fontSize: 34, fontWeight: 800, letterSpacing: 1 }}>CASTELO BRANCO</span>
             <span style={{ fontSize: 18, letterSpacing: 10, color: "#9a9fa4" }}>AUTO</span>
+            <span style={{ fontSize: 34, fontWeight: 800, letterSpacing: 1 }}>CASTELO BRANCO</span>
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>

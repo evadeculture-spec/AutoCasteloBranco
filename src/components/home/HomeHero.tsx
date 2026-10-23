@@ -26,7 +26,7 @@ export function HomeHero({ vehicleCount, fromPrice }: { vehicleCount: number; fr
       <div className="container-x flex sm:min-h-[max(38rem,min(calc(100svh-2rem),60rem))] flex-col pt-[calc(var(--header-h)+1.5rem)] sm:pt-[calc(var(--header-h)+2rem)] lg:pt-[calc(var(--header-h)+3rem)]">
         <h1 id="hero-title">
           <span className="label anim-rise block text-metal" style={{ ["--delay" as string]: "80ms" }}>
-            <span className="max-sm:hidden">Castelo Branco Auto — </span>Viaturas usadas e oficina
+            <span className="max-sm:hidden">Auto Castelo Branco — </span>Viaturas usadas e oficina
           </span>
           <span
             className="font-display anim-rise mt-5 block text-[clamp(2.5rem,5.6vw,5.4rem)] leading-[0.98] font-bold"

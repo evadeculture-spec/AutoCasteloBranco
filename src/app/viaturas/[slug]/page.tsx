@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps<"/viaturas/[slug]">
   const name = vehicleName(v);
   return pageMetadata({
     title: `${name} ${v.year} · ${formatPrice(v.priceEur)}`,
-    description: `${name} de ${v.year}, ${formatKm(v.mileageKm)}, ${v.fuel.toLowerCase()}, caixa ${v.transmission.toLowerCase()}. ${formatPrice(v.priceEur)}. Peça informação à Castelo Branco Auto.`,
+    description: `${name} de ${v.year}, ${formatKm(v.mileageKm)}, ${v.fuel.toLowerCase()}, caixa ${v.transmission.toLowerCase()}. ${formatPrice(v.priceEur)}. Peça informação à Auto Castelo Branco.`,
     path: `/viaturas/${v.slug}`,
   });
 }

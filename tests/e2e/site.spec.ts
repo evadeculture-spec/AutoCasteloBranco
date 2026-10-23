@@ -27,7 +27,7 @@ test.describe("páginas", () => {
       const res = await page.goto(path);
       expect(res?.status()).toBe(200);
       await expect(page.locator("h1")).toHaveCount(1);
-      await expect(page).toHaveTitle(/Castelo Branco Auto/);
+      await expect(page).toHaveTitle(/Auto Castelo Branco/);
       expect(await page.locator('meta[name="description"]').getAttribute("content")).toBeTruthy();
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
       expect(overflow).toBeLessThanOrEqual(0);

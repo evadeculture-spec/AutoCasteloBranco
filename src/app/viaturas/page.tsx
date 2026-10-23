@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Viaturas usadas à venda em Castelo Branco",
   description:
-    "Inventário de viaturas usadas da Castelo Branco Auto: fotografias, quilometragem, combustível, caixa de velocidades e preço. Filtre por marca, preço e combustível.",
+    "Inventário de viaturas usadas da Auto Castelo Branco: fotografias, quilometragem, combustível, caixa de velocidades e preço. Filtre por marca, preço e combustível.",
   path: "/viaturas",
 });
 

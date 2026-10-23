@@ -1,6 +1,6 @@
-# Castelo Branco Auto — website
+# Auto Castelo Branco — website
 
-Website institucional e comercial da Castelo Branco Auto: comércio de viaturas usadas e oficina automóvel em Castelo Branco.
+Website institucional e comercial da Auto Castelo Branco: comércio de viaturas usadas e oficina automóvel em Castelo Branco.
 
 > **Estado: versão de demonstração.** As quatro viaturas, os preços, os serviços de oficina e todos os contactos são
 > fictícios ou estão por configurar. O site identifica-o visualmente (faixa "Demo", etiquetas "Exemplo") e não é

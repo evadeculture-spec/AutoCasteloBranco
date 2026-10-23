@@ -23,9 +23,9 @@ export async function SiteFooter() {
         {/* Assinatura: o nome à largura total, a régua técnica por baixo. */}
         <p
           aria-hidden="true"
-          className="font-display-wide pt-16 text-[min(7.6vw,7.4rem)] leading-[0.85] font-extrabold tracking-[-0.045em] whitespace-nowrap text-paper uppercase md:pt-24"
+          className="font-display-wide pt-16 text-[min(5.8vw,5.65rem)] leading-[0.85] font-extrabold tracking-[-0.045em] whitespace-nowrap text-paper uppercase md:pt-24"
         >
-          Castelo Branco<span className="text-accent">.</span>
+          Auto Castelo Branco<span className="text-accent">.</span>
         </p>
         <div className="rule-ticks mt-6 text-paper" aria-hidden="true" />
         <div className="grid gap-12 border-b border-steel py-14 md:grid-cols-12 md:py-16">
