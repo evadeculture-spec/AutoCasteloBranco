@@ -27,7 +27,7 @@ export default function OpengraphImage() {
             <path d="M10 25v-7.5h8V25" fill="#a51e22" />
           </svg>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ fontSize: 18, letterSpacing: 10, color: "#9a9fa4" }}>AUTO</span>
+            <span style={{ fontSize: 34, fontWeight: 800, letterSpacing: 1 }}>AUTO</span>
             <span style={{ fontSize: 34, fontWeight: 800, letterSpacing: 1 }}>CASTELO BRANCO</span>
           </div>
         </div>
