@@ -12,8 +12,9 @@ const slugs = new Set(vehicles.map((v) => v.slug));
 export function proxy(request: NextRequest) {
   const slug = request.nextUrl.pathname.split("/")[2];
   if (slug && !slugs.has(decodeURIComponent(slug))) {
-    // Reescrever para um caminho sem rota: o Next responde com a página 404 e o estado 404.
-    return NextResponse.rewrite(new URL("/404", request.url));
+    // Reescrever para um caminho sem rota (página 404) e impor o estado 404 explicitamente:
+    // na Vercel, a página 404 pré-renderizada seria servida com 200 sem esta indicação.
+    return NextResponse.rewrite(new URL("/404", request.url), { status: 404 });
   }
   return NextResponse.next();
 }
