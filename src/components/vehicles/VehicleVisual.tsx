@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CarElevation } from "@/components/brand/CarElevation";
+import { CarRender } from "@/components/brand/CarRender";
 import { Camera } from "@/components/ui/icons";
 import { SHOT_LABELS } from "@/data/vehicles";
 import type { Vehicle, VehicleImage } from "@/data/types";
@@ -95,7 +95,7 @@ export function VehicleVisual({
           )}
           <div className="zoom-target absolute inset-0 flex items-end justify-center pb-[7%]">
             <div className="w-[86%] shrink-0">
-              <CarElevation type={vehicle.bodyType} tone={dark ? "light" : "dark"} />
+              <CarRender type={vehicle.bodyType} finish={dark ? "graphite" : "silver"} lights={dark} reflection={!bare} />
             </div>
           </div>
         </>

@@ -21,6 +21,16 @@ Website institucional e comercial da Auto Castelo Branco: comércio de viaturas 
 
 Sem bibliotecas de animação, UI ou formulários: CSS e React chegam para o necessário.
 
+### Identidade e ilustração
+
+- Logótipo oficial em `public/brand/`: `logo-light.png` (fundos escuros), `logo-dark.png` (fundos claros) e
+  `mark-light.png` (escudo). Extraídos do ficheiro fornecido com transparência real; o favicon (`src/app/icon.png`,
+  `apple-icon.png`) e a imagem de partilha usam o escudo/logótipo. Para substituir por versões vetoriais (SVG) do
+  designer, basta trocar os ficheiros mantendo os nomes.
+- Ilustração própria em SVG (`src/components/brand/CarRender.tsx`): render de estúdio da viatura, com modo
+  "raio-X" para a oficina. O hero da página inicial combina-a com um seletor Comprar / Oficina que leva o visitante
+  diretamente à pesquisa de viaturas ou ao pedido de marcação (formulários GET, funcionam sem JavaScript).
+
 ## 2. Comandos
 
 ```bash

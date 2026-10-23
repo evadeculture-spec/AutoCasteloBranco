@@ -1,27 +1,37 @@
-import { CarElevation } from "@/components/brand/CarElevation";
+import { CarRender } from "@/components/brand/CarRender";
+import type { BodyType } from "@/data/types";
 
 /**
- * Diagrama de inspeção: o alçado técnico com pontos de verificação numerados.
- * É a imagem-assinatura da área de oficina (as viaturas usam o registo editorial).
+ * Pontos de verificação sobre o alçado (percentagens do viewBox 1000×400).
+ * É a imagem-assinatura da área de oficina: a viatura em "raio-X".
  */
-const POINTS = [
-  { code: "M-01", label: "Motor e fluidos", x: 17, y: 50 },
-  { code: "D-03", label: "Diagnóstico", x: 44, y: 34 },
-  { code: "T-04", label: "Travagem", x: 22, y: 67 },
-  { code: "P-05", label: "Pneus", x: 73.5, y: 80 },
-  { code: "I-06", label: "Iluminação", x: 88.6, y: 45 },
+const LABELS = [
+  { code: "M-01", label: "Motor e fluidos" },
+  { code: "D-03", label: "Diagnóstico" },
+  { code: "T-04", label: "Travagem" },
+  { code: "P-05", label: "Pneus" },
+  { code: "I-06", label: "Iluminação" },
 ];
 
-export function InspectionDiagram() {
+const POSITIONS: Record<BodyType, Array<[number, number]>> = {
+  berlina: [[17, 50], [44, 34], [21.5, 67], [76, 80.5], [93.2, 48]],
+  hatchback: [[17, 50], [44, 34], [22, 67], [73.5, 80], [88.6, 45]],
+};
+
+export function inspectionPoints(type: BodyType) {
+  return LABELS.map((l, i) => ({ ...l, x: POSITIONS[type][i][0], y: POSITIONS[type][i][1] }));
+}
+
+export function InspectionDiagram({ type = "hatchback" }: { type?: BodyType }) {
   return (
     <figure className="relative">
       <div className="relative">
-        <CarElevation type="hatchback" animate />
-        {POINTS.map((p, i) => (
+        <CarRender type={type} xray />
+        {inspectionPoints(type).map((p, i) => (
           <div
             key={p.code}
             className="anim-fade absolute"
-            style={{ left: `${p.x}%`, top: `${p.y}%`, ["--delay" as string]: `${1400 + i * 140}ms` }}
+            style={{ left: `${p.x}%`, top: `${p.y}%`, ["--delay" as string]: `${600 + i * 140}ms` }}
           >
             <span className="relative -mt-2.5 -ml-2.5 flex size-5 items-center justify-center rounded-full border border-accent-light bg-ink">
               <span className="size-1.5 rounded-full bg-accent-light" />

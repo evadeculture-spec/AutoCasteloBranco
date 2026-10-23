@@ -31,7 +31,7 @@ export async function SiteFooter() {
         <div className="grid gap-12 border-b border-steel py-14 md:grid-cols-12 md:py-16">
           <div className="md:col-span-5">
             <Link href="/" className="text-paper">
-              <Logo />
+              <Logo className="h-11 sm:h-12" />
               <span className="sr-only"> — página inicial</span>
             </Link>
             <p className="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-metal">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ClosingCta } from "@/components/home/ClosingCta";
-import { CarElevation } from "@/components/brand/CarElevation";
+import { CarRender } from "@/components/brand/CarRender";
 import { ArrowRight } from "@/components/ui/icons";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { pageMetadata } from "@/lib/seo";
@@ -74,7 +74,7 @@ export default function AboutPage() {
       <section aria-hidden="true" className="relative overflow-hidden bg-ink py-16 lg:py-24">
         <div className="container-x">
           <div className="mx-auto max-w-6xl">
-            <CarElevation type="berlina" dimensions />
+            <CarRender type="berlina" />
           </div>
         </div>
       </section>

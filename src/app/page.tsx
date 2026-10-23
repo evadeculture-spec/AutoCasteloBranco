@@ -5,7 +5,7 @@ import { ClosingCta } from "@/components/home/ClosingCta";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { ArrowRight } from "@/components/ui/icons";
 import { VehicleCard } from "@/components/vehicles/VehicleCard";
-import { services } from "@/data/services";
+import { serviceOptions, services } from "@/data/services";
 import { facets, getFeaturedVehicles, getVehicles } from "@/lib/inventory";
 import { formatPrice } from "@/lib/format";
 import { pageMetadata } from "@/lib/seo";
@@ -26,7 +26,14 @@ export default function HomePage() {
 
   return (
     <>
-      <HomeHero vehicleCount={all.length} fromPrice={fromPrice} />
+      <HomeHero
+        data={{
+          vehicles: all.map((v) => ({ make: v.make, priceEur: v.priceEur })),
+          makes,
+          prices: facets(all).prices,
+          services: serviceOptions,
+        }}
+      />
 
       {/* ------------------------------------------------------------ */}
       {/* Duas áreas, um critério                                       */}

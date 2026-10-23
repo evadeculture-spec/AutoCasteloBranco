@@ -7,7 +7,7 @@ import { cn } from "@/lib/cn";
  * gráfica da Auto Castelo Branco enquanto não existem fotografias reais.
  */
 
-interface Geometry {
+export interface Geometry {
   body: string;
   glass: string;
   pillar: string;
@@ -21,7 +21,7 @@ interface Geometry {
   length: [number, number];
 }
 
-const GEOMETRY: Record<BodyType, Geometry> = {
+export const GEOMETRY: Record<BodyType, Geometry> = {
   berlina: {
     body: "M70 292 C56 278 52 242 66 218 C84 203 126 196 172 191 C252 183 322 174 376 167 C424 140 470 113 522 103 C584 92 664 92 716 100 C774 111 822 141 852 162 C884 166 916 171 936 180 C950 193 952 227 948 257 C946 277 940 289 930 292 L819.3 294 A64 64 0 1 0 700.7 294 L274.3 294 A64 64 0 1 0 155.7 294 Z",
     glass: "M398 162 C436 140 480 117 526 109 C586 100 656 100 704 108 C746 116 790 140 816 158 Z",
@@ -56,10 +56,10 @@ function Wheel({ cx }: { cx: number }) {
     return (
       <line
         key={i}
-        x1={cx + Math.cos(a) * 11}
-        y1={270 + Math.sin(a) * 11}
-        x2={cx + Math.cos(a) * 36}
-        y2={270 + Math.sin(a) * 36}
+        x1={+(cx + Math.cos(a) * 11).toFixed(2)}
+        y1={+(270 + Math.sin(a) * 11).toFixed(2)}
+        x2={+(cx + Math.cos(a) * 36).toFixed(2)}
+        y2={+(270 + Math.sin(a) * 36).toFixed(2)}
       />
     );
   });

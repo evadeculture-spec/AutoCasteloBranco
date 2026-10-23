@@ -94,7 +94,7 @@ export function SiteHeader() {
     >
       <div className="container-x flex h-[var(--header-h)] items-center justify-between gap-6">
         <Link href="/" className="shrink-0">
-          <Logo />
+          <Logo tone={dark ? "light" : "dark"} priority />
           <span className="sr-only"> — página inicial</span>
         </Link>
 
