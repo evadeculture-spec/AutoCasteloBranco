@@ -187,6 +187,17 @@ conforme RGPD / Lei n.º 41/2004. Sem isso, apenas aparecem na consola em desenv
 2. Definir as variáveis de ambiente de `.env.example` (Production).
 3. Deploy. Ligar o domínio próprio em *Settings → Domains* e atualizar `NEXT_PUBLIC_SITE_URL`.
 
+**Netlify:**
+
+1. Em app.netlify.com → *Add new site → Import an existing project* → GitHub → `evadeculture-spec/AutoCasteloBranco`.
+2. Escolher o ramo de produção (`claude/castelo-branco-auto-website`, ou `main` se for criado). O `netlify.toml`
+   já define o comando (`npm run build`), a pasta (`.next`) e o Node 22; o adaptador Next.js da Netlify é
+   aplicado automaticamente.
+3. Em *Site configuration → Environment variables*, definir `NEXT_PUBLIC_SITE_URL` com o endereço Netlify
+   (ex.: `https://auto-castelo-branco.netlify.app`) e as restantes variáveis de `.env.example`. Depois, *Deploy*.
+4. Os sites Netlify são públicos por defeito. Ligar o domínio próprio em *Domain management* e atualizar
+   `NEXT_PUBLIC_SITE_URL`.
+
 **Servidor próprio (Node.js):** `npm ci && npm run build && npm start` (porta 3000; usar um proxy como Nginx com HTTPS).
 Cache Components requer o runtime Node.js (não usar exportação estática).
 

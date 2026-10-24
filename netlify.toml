@@ -1,0 +1,10 @@
+# Netlify — deteta Next.js automaticamente e usa o adaptador OpenNext.
+# Este ficheiro apenas fixa o comando de build e a versão do Node.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Manter em modo demonstração até validar dados reais (ver README §11).
+  NEXT_PUBLIC_DEMO_MODE = "true"
